@@ -2,15 +2,15 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("Raleway-ExtraLight.ttf");
+    src: url("../fonts/Raleway-ExtraLight.ttf");
 }
 @font-face {
     font-family: "Roboto";
-    src: url("Roboto-Regular.ttf");
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
     font-family: "Roboto Mono";
-    src: url("Roboto_Mono-Regular.ttf");
+    src: url("../fonts/Roboto_Mono-Regular.ttf");
 }
 
 html {
@@ -71,7 +71,7 @@ div.video-container {
     height: 500px;
     padding-top: 20px;
     padding-bottom: 40px;
-    background-image: url(iss.jpg);
+    background-image: url(../img/iss.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ p.tagline {
     position: relative;
     z-index: 10;
 
-    /* background: url(stars_small.jpg) no-repeat; */
+    /* background: url(../img/stars_small.jpg) no-repeat; */
     /* background-size: cover; */
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */

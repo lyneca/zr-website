@@ -1,0 +1,114 @@
+<!-- Draft website by Penelope Player & Luke Tuthill -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zero Robotics Australia</title>
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Programming competition">
+        <meta name="keywords" content="space,robot,programming,coding">
+        <meta name="author" content="Penny Player & Luke Tuthill">
+        <meta name="viewport" content"width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119121805-1"></script>
+    <!-- <script src="jquery-3.3.1.min.js"></script> -->
+	<script>
+  	    window.dataLayer = window.dataLayer || [];
+  	    function gtag(){dataLayer.push(arguments);}
+  	    gtag('js', new Date());
+
+  	    gtag('config', 'UA-119121805-1');
+	</script>
+    </head>
+    <body>
+        <main>
+        <aside class="sidebar">
+            <img id="usyd-zr-logo" src="University-of-Sydney-logo-lockup-Zero-Robotics-mono.jpg" alt="Zero Robotics Australia">
+            <nav>
+                <h3><a href="index.html"><div>Zero Robotics Australia</div></a></h3>
+                <!-- <a class="inactive"><div>ZR Australia Handbook</div></a> -->
+                <a href="index.html#applications"><div>Registration</div></a>
+                <a href="index.html#registration"><div>Launch Event</div></a>
+                <a href="index.html#dates"><div>Important Dates</div></a>
+                <a href="index.html#faq"><div>FAQ</div></a>
+                <a href="index.html#contact"><div>Contact Us</div></a>
+            </nav>
+            <nav>
+                <h3><a href="qc.html"><div>Qualifying Competition</div></a></h3>
+                <a href="2018_AustralianQualifyingCompetition.pdf" target="_blank"><div>2018 Handbook</div></a>
+                <a href="ZeroRoboticsAustralianHandbook_2018.pdf" target="_blank"><div>Game Rules</div></a>
+		<a href="AusLaunchEventSlides.pdf" target="_blank"><div>Launch Event Slides</div></a>
+		<a href="gantt_template.xlsx" target="_blank"><div>Gantt Chart Template</div></a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSeVKo6GYAl_d3k_uVRcaGpO-05rZNHkrt9DI0gyOhhr7F-4Bg/viewform?usp=sf_link" target="_blank"><div>Pre-Competition Survey</div></a>
+		<a href="https://docs.google.com/forms/d/e/1FAIpQLSco6S8-bBrWqvfELzmj9rKqsusoIzQYrdOV80gfbJsKjHlTPg/viewform?usp=sf_link" target="_blank"><div>Pre-Competition Quiz</div></a>
+		<a href="Zero Robotics Team Structure Example.docx" target="_blank"><div>Team Structure (Example)</div></a>
+            </nav>
+            <nav>
+                <h3><a href="studentres.html"><div>Student Resources</div></a></h3>
+                <a href="http://web.aeromech.usyd.edu.au/zerorobotics/ZR%20Rosetta.pdf" target="_blank"><div>Rosetta Sheet</div></a>
+                <a href="http://zerorobotics.mit.edu/tutorials/" target="_blank"><div>MIT Tutorials</div></a>
+                <a href="http://web.aeromech.usyd.edu.au/zerorobotics/Tutorial1_final.mp4" target="_blank"><div>Intro to the ZR IDE</div></a>
+                <a href="http://lyneca.github.io/zrbot" target="_blank"><div>ZR Slack Bot</div></a>
+            </nav>
+
+            <nav>
+                <h3>Forums</h3>
+                <a href="http://zerorobotics.mit.edu/forum/" target="_blank"><div>MIT Forum</div></a>
+		<a href="QA.html" target="_blank"><div>Q&A Submission</div></a>
+                <a href="PastQns.html" target="_blank"><div>Past Questions</div></a>
+            </nav>
+
+            <nav>
+                <h3>Teacher Resources</h3>
+                <a href="http://web.aeromech.usyd.edu.au/zerorobotics/Zero%20Robotics%20Lesson%20Plan.pdf" target="_blank"><div>Lesson Plan</div></a>
+            </nav>
+
+            <nav>
+                <h3>External Links</h3>
+                <a href="https://zerorobotics.mit.edu" target="_blank"><div>Zero Robotics Website</div></a>
+		<a href="https://sydney.edu.au/engineering/study-engineering-and-it/why-study-here/high-school-students/zero-robotics.html" target="_blank"><div>The University of Sydney Home Website</div></a>
+            </nav>
+        </aside>
+
+        <article class="content">
+            <header>
+                <!-- <img id="zr-logo" src="zraus.png" alt="Zero Robotics Australia"> -->
+                <h1>Zero Robotics Australia</h1>
+            </header>
+
+	    <section id="QA">
+                <h2>Question and Answers</h2>
+		<p> Every Tuesday we will answer any questions about the competition and post them in <a href="PastQns.html">past questions</a>. Please check that your question has not already been answered before posting.</p> <p>If you are looking for a more immediate response check out the <a href="http://zerorobotics.mit.edu/forum/">MIT Forum</a>, especially during the International Competition. </p>
+                    <form action="qaFormHand.php" method="post">
+    			<label for="fname">Team Name:</label>
+    			<input type="text" id="fname" name="name" placeholder="Your team name..">
+ 		    <br>
+  		    <br>
+    			<label for="queryreason">Subject:</label>
+    			<select id="queryreason" name="matter">
+                            <option value="c">C programming</option>
+                            <option value="vectors">Vectors</option>
+      			    <option value="resources">Debugging</option>
+      			    <option value="general">Other</option>
+    			</select>
+  		    <br>
+  		    <br>
+    			<label for="query">Question</label>
+  		    <br>
+  		    <br>
+    			<textarea id="query" name="querybody" placeholder="Write something.." style="height:200px;width:600px"></textarea>
+    		    <br>
+    			<input type="submit" value="Submit">
+
+  		    </form>
+            </section>
+<!-- Footer -->
+            <footer class="w3-container w3-black">
+                <p><span>&copy; 2018 Zero Robotics Australia</span></p>
+            </footer>
+        </article>
+        </main>
+    </body>
+</html>

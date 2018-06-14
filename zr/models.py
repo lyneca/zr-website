@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Answer(models.Model):
-    name = models.CharField("Name", max_length=50)
+    name = models.CharField("Name", max_length=50, null=True, blank=True)
     text = models.TextField("Answer")
     date = models.DateTimeField("Date submitted", auto_now=True)
 
@@ -16,12 +16,12 @@ class Answer(models.Model):
 
 
     def __str__(self):
-        return "{}'s answer to \"{}\"".format(self.name, Question.objects.get(answer=self.id).title)
+        return self.text
 
 class Question(models.Model):
-    name = models.CharField("Name", max_length=50)
+    name = models.CharField("Name", max_length=50, null=True, blank=True)
     title = models.CharField("Title", max_length=80)
-    text = models.TextField("Question")
+    text = models.TextField("Question", null=True, blank=True)
     answer = models.ForeignKey(Answer, on_delete=models.CASCADE, null=True, blank=True)
     date = models.DateTimeField("Date submitted", auto_now=True)
 

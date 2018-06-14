@@ -243,6 +243,11 @@ div.question > div.text > p {
     padding-left: 5px;
 }
 
+div.answer > div.text > p > a:link {
+    color: #555555;
+    text-decoration: underline;
+}
+
 div.answer {
     font-size: 20px;
     width: 100%;

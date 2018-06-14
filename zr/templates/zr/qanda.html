@@ -9,21 +9,26 @@
         {% for question in questions %}
         <div class="question">
             <div class="title">
-                {{ question.title }} <span class="info">{{ question.name }} &bullet; {{ question.datestr }}</span>
+                {{ question.title }}
             </div>
+            {% if question.text %}
             <div class="text">
+                {% autoescape off %}
                 <p>
-                {{ question.text }}
+                    {{ question.text }}
                 </p>
+                {% endautoescape %}
             </div>
+            {% endif %}
         </div>
         {% if question.answer %}
         <div class="answer">
             <div class="text">
-                <span class="info">{{ question.answer.name }} &bullet; {{ question.answer.datestr }}</span>
+                {% autoescape off %}
                 <p>
                     {{ question.answer.text }}
                 </p>
+                {% endautoescape %}
             </div>
         </div>
         {% endif %}

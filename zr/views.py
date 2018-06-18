@@ -11,3 +11,6 @@ def qanda(request):
         "questions": Question.objects.all()
     }
     return render(request, "zr/qanda.html", context=context)
+
+def resources(request):
+    return render(request, "zr/resources.html")

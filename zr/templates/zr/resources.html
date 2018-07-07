@@ -1,31 +1,88 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<head>
+<title>Zero Robotics Australia</title>
+<!--Meta-->
+<meta charset="UTF-8">
+<meta name="description" content="Free Programming competition">
+<meta name="keywords" content="space,robot,programming,coding">
+<meta name="author" content="Penny Player & Luke Tuthill">
+<meta name="viewport" content "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static "zr/css/style.css" %}">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119121805-1"></script>
+<!-- <script src="jquery-3.3.1.min.js"></script> -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119121805-1');
+</script>
+</head>
+<body>
     {% include "zr/header.html" %}
     <article>
-    <h1>Resources</h1>
-    <h2>Student Resources</h2>
-    <h3><a href="/resources/roestta.pdf">Rosetta Sheet</a></h3>
-    <p>
-    Named after the famous
-    <a href="https://en.wikipedia.org/Rosetta_Stone" target="_blank">Rosetta Stone</a>,
-    the Rosetta Sheet translates Python and Java code into Zero Robotics C. 
-    </p>
-    <hr />
-    <h3><a href="http://zerorobotics.mit.edu/tutorials/" target="_blank">MIT Tutorials</a></h3>
-    <p>
-    Coding / Physics / Math tutorials provided by MIT
-    </p>
-    <hr />
-    <h3><a href="http://web.aeromech.usyd.edu.au/zerorobotics/Tutorial1_final.mp4" target="_blank">Intro to the ZR IDE</a></h3>
-    An intro to the ZR Integrated Development Environment (IDE)
-    <p>
-    <hr />
-    </p>
-    <h3><a href="http://lyneca.github.io/zrbot" target="_blank">ZR Slack Bot</a></h3>
-    <p>
-    Get sections of the ZR Manual from inside Slack!
-    </p>
+        <h1>Resources</h1>
+        <h2>Student Resources</h2>
+        <h3><a href="/resources/roestta.pdf">Rosetta Sheet</a></h3>
+        <p class="indented">
+        Named after the famous
+        <a href="https://en.wikipedia.org/Rosetta_Stone" target="_blank">Rosetta Stone</a>,
+        the Rosetta Sheet translates Python and Java code into Zero Robotics C. 
+        </p>
+        <h3><a href="http://zerorobotics.mit.edu/tutorials/" target="_blank">MIT Tutorials</a></h3>
+        <p class="indented">
+        Coding / Physics / Math tutorials provided by MIT.
+        </p>
+        <h3><a href="http://web.aeromech.usyd.edu.au/zerorobotics/Tutorial1_final.mp4" target="_blank">Intro to the ZR IDE</a></h3>
+        <p class="indented">
+        An intro to the ZR Integrated Development Environment (IDE).
+        </p>
+        <h3><a href="http://lyneca.github.io/zrbot" target="_blank">ZR Slack Bot</a></h3>
+        <p class="indented">
+        Query the ZR Manual from inside Slack!
+        </p>
+        <h2>Communication</h2>
+        <p>
+        Communication outside school hours/weekly meetings is important.
+        It's especially important during the allience stage of the
+        International Competition when they join with a team in another
+        country (and time zone).
+        </p>
+        <p>Here are a couple of options that see regular use from ZR teams:</p>
+        <h3><a href="https://slack.com" target="_blank">Slack</a></h3>
+        <p class="indented">
+        Slack is a live chat platform designed for software and engineering teams.
+        If you were doing a project such as this as a university team or a small company,
+        this is the go-to piece of software.
+        </p>
+        <p class="indented">
+        Slack organises conversations in a series of 'channels' - you might create a <code>#code</code>
+        channel for discussing progress and issues to do with the programming aspect of ZR, or a
+        <code>#strategy</code> channel for discussing the strategy you will implement.
+        </p>
+        <p class="indented">
+        Slack also allows for a variety of addons and plugins - for example, a GitHub plugin that
+        notifies a channel about new commits or issues with your code repository. One of the lead
+        mentors has also written a Slack plugin that allows you to search within the Zero Robotics manual
+        from inside Slack (listed above).
+        </p>
+        <h3><a href="https://discord.gg" target="_blank">Discord</a></h3>
+        <p class="indented">
+        Discord is a similar live chat platform, but instead designed more for gamers. Discord doesn't
+        have the variety of plugins and development tools as readily available as Slack (although many common
+        Slack plugins can still be replicated inside Discord), but it makes up for that by having user-friendly,
+        high-fidelity voice chat options. Being able to talk to each other over voice chat while coding, or
+        discussing strategy, or coordinating meetings (especially with international teams) is a very useful
+        option to have available.
+        </p>
+        <p>
+        If you have any other alternatives to these that you thought worked well, let us know! Send an email to
+        <a class="email" href="mailto:zero-robotics.admin@sydney.edu.au">zero-robotics.admin@sydney.edu.au</a>.
+        </p>
     </article>
+    {% include "zr/footer.html" %}
     </body>
 </html>

@@ -119,16 +119,16 @@ h1 {
 
 h2 {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 h3 {
     font-family: "Roboto", sans-serif;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-h3 > a {
+a.email {
     text-decoration: underline;
 }
 
@@ -206,6 +206,10 @@ div.intro > p:first-of-type {
 p {
     font-size: 20px;
     width: 800px;
+}
+
+p.indented {
+    margin-left: 20px;
 }
 
 /* Q and A */

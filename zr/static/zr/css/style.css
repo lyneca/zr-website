@@ -34,9 +34,22 @@ div.title {
 }
 
 main {
-    height: 100%;
     width: 100%;
     padding: 0;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #eeeeee;
+}
+
+table {
+    width: 100%;
+}
+
+td, th {
+    font-size: 18px;
+    padding: 5px;
 }
 
 a {
@@ -271,5 +284,31 @@ div.answer > div.text {
 div.answer > div.text > p {
     margin: 0;
     padding-left: 5px;
+}
+
+div.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 820px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #bbbbbb;
+    vertical-align: top;
+}
+
+img.footer-icon {
+    height: 100px;
+}
+
+div.footer-info {
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: top;
+    margin: auto 0;
+}
+
+div.footer-info > a {
+    text-decoration: underline;
 }
 

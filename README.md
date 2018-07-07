@@ -18,4 +18,4 @@ The Zero Robotics Australia website. Written in Django.
     # Run development server
     $ python3 manage.py runserver 0.0.0.0:8000
 
-Navigate to [localhost:8000](localhost:8000), and you should see the website.
+Navigate to [localhost:8000](https://localhost:8000), and you should see the website.

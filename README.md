@@ -1,2 +1,21 @@
 # Zero Robotics Website
 The Zero Robotics Australia website. Written in Django.
+
+## Installation and Testing
+    # Clone repo 
+    $ git clone https://github.com/lyneca/zr-website/
+    $ cd zr-website
+
+    # Switch to development branch
+    $ git checkout develop
+
+    # Create database
+    $ python3 manage.py migrate
+
+    # Create local database admin
+    $ python3 manage.py createsuperuser
+
+    # Run development server
+    $ python3 manage.py runserver 0.0.0.0:8000
+
+Navigate to [localhost:8000](localhost:8000), and you should see the website.

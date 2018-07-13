@@ -68,8 +68,9 @@ header {
 }
 
 .zr-logo {
-    width: 200px;
+    height: 120px;
     float: left;
+    margin: 3px;
 }
 
 div.nav-surround {
@@ -80,7 +81,7 @@ div.nav-surround {
 nav {
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 820px;
     margin: auto;
     align-items: center;
@@ -244,7 +245,7 @@ div.question > div.title {
 
 span.info {
     font-size: 15px;
-	font-variant: small-caps;
+    font-variant: small-caps;
     text-align: right;
     float: right;
     color: #bbbbbb;

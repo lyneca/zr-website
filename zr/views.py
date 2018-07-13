@@ -9,6 +9,9 @@ def index(request):
 def about(request):
     return render(request, "zr/about.html")
 
+def media(request):
+    return render(request, "zr/media.html")
+
 def resources(request):
     return render(request, "zr/resources.html")
 

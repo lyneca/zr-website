@@ -158,6 +158,18 @@ div.video-container {
     background-size: cover;
 }
 
+h1.background {
+    width: 100%;
+    color: white;
+    outline: black;
+    padding: 40px 0px;
+    background-image: url(../img/Starsinthesky.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 div.video {
     background-color: white;
     width: 800px;

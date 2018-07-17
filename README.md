@@ -1,6 +1,11 @@
 # Zero Robotics Website
 The Zero Robotics Australia website. Written in Django.
 
+## Dependencies
+
+- [Django](https://djangoproject.com): Python web server
+  - `python3 -m pip install django`
+
 ## Installation and Testing
     # Clone repo 
     $ git clone https://github.com/lyneca/zr-website/

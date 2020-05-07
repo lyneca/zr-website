@@ -226,7 +226,7 @@ div.contact {
 ul {
     list-style: none;
     margin: 0 0 0 2em;
-    padding: 0;
+    padding-left: 20px;
 }
 
 section#contact > h2 {
